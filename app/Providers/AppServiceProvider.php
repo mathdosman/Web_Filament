@@ -1,7 +1,9 @@
 <?php
 
 namespace App\Providers;
-
+use App\Models\Category;
+use Illuminate\View\View;
+use Illuminate\Support\Facades;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -19,6 +21,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        Facades\View::composer('layout', function (View $view) {
+            $view->with('categories', Category::has('posts')->get());
+        });
     }
 }

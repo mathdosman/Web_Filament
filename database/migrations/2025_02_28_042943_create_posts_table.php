@@ -15,10 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string('thumbnail');
             $table->string('title')->index();
-            $table->string('slug');
+            $table->string('slug')->unique();
             $table->text('description')->nullable();
             $table->longText('body');
-            $table->boolean('active');
+            $table->boolean('active')->default(false);
+            $table->foreignId('category_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }

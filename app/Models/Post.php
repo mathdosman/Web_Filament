@@ -13,7 +13,8 @@ class Post extends Model
         'description',
         'thumbnail',
         'body',
-        'active'
+        'active',
+        'category_id'
     ];
 
     public function category():BelongsTo
