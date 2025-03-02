@@ -8,6 +8,7 @@ export default {
         './resources/**/*.blade.php',
         './resources/**/*.js',
         './resources/**/*.vue',
+        './vendor/awcodes/filament-tiptap-editor/resources/**/*.blade.php'
     ],
     theme: {
         extend: {

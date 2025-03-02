@@ -1,6 +1,6 @@
 @extends('layout')
-@section('title','Post Page')
-@section('description','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor, tortor eu interdum consectetur, tellus tellus ullamcorper velit, nec laoreet diam quam tempor mauris. Proin ultricies velit dictum, eleifend ipsum quis, tristique lorem. Donec fermentum vestibulum cursus. Ut fermentum, risus id consequat dapibus, ex mi vehicula purus, vehicula posuere eros urna nec metus. Nulla vulputate vestibulum mi, a fringilla metus feugiat vel. Morbi eget est mollis, ornare ante vitae, rutrum dui. Curabitur blandit velit et elementum varius. Sed tempor tellus nisi, at sollicitudin nisi semper vitae. Etiam auctor enim in dignissim pharetra. Aliquam hendrerit tortor vitae pretium facilisis. Praesent enim dolor, rhoncus nec sapien cursus, fermentum faucibus turpis. Duis finibus dui eu congue tincidunt.')
+@section('title',' | Halaman Utama')
+@section('description','math_dosman')
 
 @section('content')
 

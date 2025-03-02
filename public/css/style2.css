@@ -1,0 +1,32 @@
+@charset "UTF-8";
+.grape-nuts-regular {
+    font-family: "Grape Nuts", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .black-ops-one-regular {
+font-family: "Black Ops One", system-ui;
+font-weight: 400;
+font-style: normal;
+}
+
+pre{
+    background-color: #1f2937;
+    border-radius: .375rem;
+    color: #e5e7eb;
+    font-size: .875em;
+    font-weight: 400;
+    line-height: 1.7142857;
+    margin-bottom: 1.7142857em;
+    margin-top: 1.7142857em;
+    overflow-x: auto;
+    padding-inline-end: 1.1428571em;
+    padding-bottom: .8571429em;
+    padding-top: .8571429em;
+    padding-inline-start: 1.1428571em;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.font-family-inter {
+    font-family: "Inter", sans-serif;
+    }

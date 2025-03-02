@@ -14,7 +14,7 @@ class PostController extends Controller
         ->leftJoin('categories', 'categories.id', '=', 'posts.category_id')
         ->select('posts.*', 'categories.title as category_title') 
         ->orderBy('posts.id', 'desc') 
-        ->paginate(10);
+        ->paginate(7);
 
         return view('posts',compact('posts'));
     }

@@ -1,6 +1,6 @@
 @extends('layout')
-@section('title','{{ $post->title }}')
-@section('description','{{ $post->description }}')
+@section('{{ $post->title }}')
+@section('{{ $post->description }}')
 
 @section('content')
 
