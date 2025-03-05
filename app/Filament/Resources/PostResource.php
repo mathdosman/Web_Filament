@@ -27,8 +27,7 @@ class PostResource extends Resource
             ->schema([
                 Forms\Components\FileUpload::make('thumbnail')
                     ->required()
-                    ->image()
-                    ->preserveFilenames(),
+                    ->image(),
 
                 Forms\Components\TextInput::make('title')
                 ->live(onBlur: true)

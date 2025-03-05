@@ -10,9 +10,11 @@
             <a href="/posts/{{ $value->id }}/{{ $value->slug }}" class="hover:opacity-75 w-1/4 display-block bg-cover bg-center bg-[url('/storage/{{ $value->thumbnail }}')]">
             </a>
             <div class="bg-white flex w-3/4 flex-col justify-start p-6">
-                
-                <a href="/posts/{{ $value->id }}/{{ $value->slug }}" class="text-2xl font-bold hover:text-gray-700 pb-4">{{ $value->title }}</a>
-                <a href="/posts/{{ $value->id }}/{{ $value->slug }}" class="pb-6">{{ $value->description }} | <span class="font-bold text-blue-700">{{ $value->category_title }}</span></a>
+                <p>
+                <a href="/posts/{{ $value->id }}/{{ $value->slug }}" class="text-2xl font-bold hover:text-gray-700 pb-4">{{ $value->title }}</a> <br>
+                <span class="pb-6">{{ $value->description }} | <a href="/posts/{{ $value->id }}/{{ $value->slug }}" class="font-bold text-blue-700">{{ $value->category_title }}</a></span> <br>
+                    {!! Str::limit(strip_tags($value->body), 200,'...') !!}
+                </p>
                 <a href="/posts/{{ $value->id }}/{{ $value->slug }}" class="text-indigo-800 hover:text-black">Continue Reading <i class="fas fa-arrow-right"></i></a>
             </div>
         </article>
