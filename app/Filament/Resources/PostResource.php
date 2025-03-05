@@ -38,9 +38,12 @@ class PostResource extends Resource
                 Forms\Components\TextInput::make('slug')->readonly(),
                 Forms\Components\Textarea::make('description')
                     ->columnSpanFull(),
+                    
                 Forms\Components\RichEditor::make('body')
-                    ->required()
-                    ->columnSpanFull(),
+                ->fileAttachmentsDisk('public')
+                ->fileAttachmentsDirectory('posts/images')
+                ->fileAttachmentsVisibility('public'),
+
                 Forms\Components\Toggle::make('active')
                     ->required(),
                 Forms\Components\Select::make('category_id')
